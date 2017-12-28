@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { SPage } from './app.po';
 
-describe('spas-portfo App', () => {
-  let page: AppPage;
+describe('s App', function() {
+  let page: SPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new SPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
